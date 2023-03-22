@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <nav class="nav">
+            <a href="" class="logo nav__link">Logo</a>
+            <ul class="nav__menu">
+                <li class="nav__menu-item">
+                    <a href="#bienvenida" class="nav__menu-link nav__link">Inicio</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#quienesSomos" class="nav__menu-link nav__link">Compras</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#servicios" class="nav__menu-link nav__link">Productos</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#preg__frec" class="nav__menu-link nav__link">Fabricantes</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#contacto" class="nav__menu-link nav__link">Reportes</a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <img src="assets/img/iconos/admin.png" width="40px" height="40px" style="margin-top:30px;">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form style="background-color:rgb(46, 44, 44);width: 100%; color: #fff;padding: 15px;">
+
+            <div>
+                <label for="codigo">Codigo</label>
+                <input class="input-form" type="text" name="codigo" placeholder="Inserte el codigo" id="codigo">
+
+                <label for="descripcion">Descripción</label>
+                <input class="input-form" type="text" name="codigo" placeholder="Inserte Descripción" id="descripcion">
+
+                <label for="modelo">Modelo</label>
+                <input class="input-form" type="text" name="modelo" placeholder="Inserte Modelo" id="modelo">
+            </div>
+
+            <div>
+                <label for="producto">Producto</label>
+                <input class="input-form" type="text" name="producto" placeholder="Inserte Producto" id="producto">
+
+                <label for="fabricante">Fabricante</label>
+                <input class="input-form" type="text" name="fabricante" placeholder="Inserte Fabricante" id="fabricante">
+
+                <label for="estatus">Estatus</label>
+                <input class="input-form" type="text" name="estatus" placeholder="Inserte Estado" id="estatus">
+            </div>
+            <br>
+            <label for="stock">Stock</label>
+            <input class="input-form" type="text" name="stock" placeholder="Inserte Stock" id="stock">
+
+            <label for="precio">Precio</label>
+            <input class="input-form" type="text" name="precio" placeholder="Inserte Precio" id="precio">
+
+            <button id="agregar_datos">Agregar Registros</button>
+        </form>
+
+        <table width="100%" cellspacing="13px" class="tabla"> <!-- </table>id="content-table"> ><<!-->
+            <thead>
+                <tr style="color:#fff;">
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Modelo</th>
+                <th>Producto</th>
+                <th>Fabricante</th>
+                <th>Estado</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="content_table" >
+               
+            
+        </tbody>
+            
+        </table>
+
+    
+
+        <button id="deleted-all">Eliminar todo</button>
+    </div>
+
+    <!--Footer-->
+    <footer id="contacto">
+
+        <div class="container-logoFooter">
+            <img src="assets/img/logo renovado.png" alt="">
+        </div>
+
+        <div class="content-contacto-footer">
+            <h2>¿Cómo puedes contactarnos?</h2>
+
+            <div class="content__datos-contacto">
+                <img class="img-mano" src="assets/img/iconos/ico-mano-abajo.png" alt="">
+                <p style="padding: 5px;">Llámanos, aquí estan nuestros datos</p>
+            </div>
+
+            <div class="content__datos-contacto">
+                <img class="img-casa" src="assets/img/iconos/ico-casa.png" alt="">
+                <p style="padding: 5px;">Monterrey 219, Int. 02, Roma Norte, Cuauhtémoc CDMX.</p>
+            </div>
+
+            <div class="content__datos-contacto">
+                <img class="img-maletin" src="assets/img/iconos/ico-maletin.png" alt="">
+                <p style="padding: 5px;">(55) 22466278</p>
+            </div>
+
+            <div class="content__datos-contacto">
+                <img class="img-tel-whatsApp" src="assets/img/iconos/ico-whatsaap.png" alt="">
+                <p style="padding: 5px;">044 (55) 22466278</p>
+            </div>
+
+            <div class="content__datos-contacto">
+                <img class="img-correo" src="assets/img/iconos/ico-email.png" alt="">
+                <p style="padding: 5px;">soporteramon@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="content__redes-sociales">
+            <div class="content__iconos-redesSociales">
+                <a href="https://www.facebook.com/sisolutionsmex" target="_blank">
+                    <img src="assets/img/redes-sociales/facebook.png" style="margin-top: 13px;">
+                </a>
+            </div>
+            
+            <div class="content__iconos-redesSociales">
+                <a href="https://www.instagram.com/reymonbond/" target="_blank">
+                    <img src="assets/img/redes-sociales/instagram.png" style="margin-top: 13px;">
+                </a>
+            </div>
+            
+            <div class="content__iconos-redesSociales">
+                <a href="#">
+                    <img src="assets/img/redes-sociales/html-5.png" style="margin-top: 13px;">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/proyecto.js"></script>
+</body>
+</html>
